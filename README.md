@@ -2,6 +2,6 @@
 Discord Bot built to track migration costs
 
 ```sh
-$ docker build -t GDP-Migration-Tracker:latest .
-$ docker run -e "TOKEN=ENTERYOURTOKENHERE" -e "APIKEY=ENTERYOURAPIKEY" GDP-Migration-Tracker:latest
+$ docker build -t gdp-migration-tracker:latest .
+$ docker run -e "TOKEN=ENTERYOURTOKENHERE" -e "APIKEY=ENTERYOURAPIKEY" gdp-migration-tracker:latest
 ```
