@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  gdp-migration-tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ./.env
