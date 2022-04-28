@@ -21,7 +21,7 @@ client.once('ready', async () => {
               if (URLS[i] == URLS[1]) {
                 gas = ("gas", JSON.parse(data)["result"]["SafeGasPrice"])
               } else {
-                  ethCost = ("ethCost", JSON.parse(data)["result"]["ethusd"])
+                ethCost = ("ethCost", JSON.parse(data)["result"]["ethusd"])
               }
             } catch {}
           });
@@ -35,7 +35,7 @@ client.once('ready', async () => {
         await delay(5*1000);
         console.log("GAS", gas, "ETH/USD", Math.round(ethCost), "MIGRATION/USD", Math.round(USD));
         client.user.setStatus('available')
-        client.user.setActivity("💲 " + Math.round(USD).toString() + " 🧢 ~120k ⛽ " +gas.toString(), {
+        client.user.setActivity("💲 " + Math.round(USD) + " 🧢 ~120k ⛽ " +gas, {
             type: "PLAYING",
             url: "http://glm.golem.network/"
           });
