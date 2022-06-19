@@ -36,8 +36,8 @@ client.once("ready", async () => {
       await delay(5 * 1000)
       console.log("GAS", gas, "ETH/USD", Math.round(ethCost), "MIGRATION/USD", Math.round(USD))
       client.user.setStatus("available")
-      client.user.setActivity("Cost: $" + Math.round(USD) + " | Gas: " + gas, {
-        type: "PLAYING",
+      client.user.setActivity("Cost: $" + USD.toFixed(2) + " | Gas: " + gas, {
+        type: "WATCHING",
         url: "http://glm.golem.network/",
       })
     }
